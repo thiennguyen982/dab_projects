@@ -27,6 +27,8 @@ resources:
               catalog: "${var.catalog}"
             source: WORKSPACE
           existing_cluster_id:  "${var.existing_cluster_id}"
+          libraries:
+           - whl: ../../dist/*.whl
         - task_key: 03_gold_citibike_daily_ride_summary
           depends_on:
             - task_key: 02_silver_citibike
