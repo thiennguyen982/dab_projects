@@ -1,0 +1,27 @@
+{
+    "num_workers": 0,
+    "cluster_name": "Hoang Thien Nguyen's Cluster",
+    "spark_version": "16.4.x-scala2.13",
+    "spark_conf": {
+        "spark.master": "local[*, 4]",
+        "spark.databricks.cluster.profile": "singleNode"
+    },
+    "azure_attributes": {
+        "first_on_demand": 1,
+        "availability": "SPOT_WITH_FALLBACK_AZURE",
+        "spot_bid_max_price": -1
+    },
+    "node_type_id": "Standard_D4s_v3",
+    "driver_node_type_id": "Standard_D4s_v3",
+    "ssh_public_keys": [],
+    "custom_tags": {
+        "ResourceClass": "SingleNode"
+    },
+    "spark_env_vars": {},
+    "autotermination_minutes": 60,
+    "enable_elastic_disk": true,
+    "init_scripts": [],
+    "single_user_name": "nguyenhoangthien1998@gmail.com",
+    "data_security_mode": "SINGLE_USER",
+    "runtime_engine": "STANDARD"
+}

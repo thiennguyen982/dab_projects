@@ -1,0 +1,6 @@
+variables:
+  catalog:
+    default: "citibike_dev"
+
+  existing_cluster_id:
+    default: "0708-045701-w26c4z8y"

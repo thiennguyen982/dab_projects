@@ -1,0 +1,11 @@
+# Prevent syncing local packages and caches
+Lib/
+site-packages/
+*.pyc
+__pycache__/
+venv/
+.env
+
+.databricks
+
+databricks/*
