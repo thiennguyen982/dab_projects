@@ -1,3 +1,4 @@
+from importlib.metadata import entry_points
 from setuptools import setup, find_packages
 
 setup(
@@ -8,4 +9,9 @@ setup(
     packages=find_packages(where="./src"),
     package_dir={"": "./src"},
     install_requires=["setuptools"],
+    entry_points={
+        "packages":[
+            "main=dab_project.main:main"
+        ]
+    }
 )

@@ -1,6 +1,5 @@
 # HOST
-databricks configure --host https://adb-3466462831393837.17.azuredatabricks.net/
-
+databricks configure --host <HOST_ADDRESS>
 # Create Clusters
 databricks clusters create --json @create-compute.json --profile DEFAULT
 

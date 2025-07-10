@@ -3,7 +3,16 @@ resources:
     citibike_nb:
       name: citibike_nb
       tasks:
+        - task_key: 00_whl_upload
+          python_wheel_task:
+            package_name: dab_project
+            entry_point: main
+          job_cluster_key: "${var.existing_cluster_id}"
+          libraries:
+            - whl: ../../dist/*.whl
         - task_key: 01_bronze_citibike
+          depends_on:
+            - task_key: 00_whl_upload
           notebook_task:
             notebook_path: ../../citibike_etl/notebooks/01_bronze/01_bronze_citibike.ipynb
             base_parameters:
@@ -27,8 +36,6 @@ resources:
               catalog: "${var.catalog}"
             source: WORKSPACE
           existing_cluster_id:  "${var.existing_cluster_id}"
-          libraries:
-           - whl: ../../dist/*.whl
         - task_key: 03_gold_citibike_daily_ride_summary
           depends_on:
             - task_key: 02_silver_citibike
