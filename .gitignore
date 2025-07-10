@@ -9,3 +9,11 @@ venv/
 .databricks
 
 databricks/*
+
+.vscode/*
+
+databricks/
+
+.ruff_cache/
+
+.vscode/
