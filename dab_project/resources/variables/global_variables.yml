@@ -4,3 +4,6 @@ variables:
 
   existing_cluster_id:
     default: "0709-082159-boeeu50"
+
+  dev_flag:
+    default: true

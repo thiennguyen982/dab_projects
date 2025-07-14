@@ -7,7 +7,7 @@ resources:
           python_wheel_task:
             package_name: dab_project
             entry_point: main
-          job_cluster_key: "${var.existing_cluster_id}"
+          existing_cluster_id: "${var.existing_cluster_id}"
           libraries:
             - whl: ../../dist/*.whl
         - task_key: 01_bronze_citibike
