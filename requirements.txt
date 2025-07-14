@@ -8,12 +8,13 @@ packaging==25.0
 pandas==2.3.1
 pluggy==1.6.0
 protobuf==6.31.1
-py4j==0.10.9.9
+py4j==0.10.9.7
 pyarrow==20.0.0
 Pygments==2.19.2
-pyspark==4.0.0
+pyspark==3.5.1
 pytest==8.4.1
 python-dateutil==2.9.0.post0
 pytz==2025.2
+ruff==0.12.3
 six==1.17.0
 tzdata==2025.2

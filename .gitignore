@@ -19,3 +19,5 @@ databricks/
 .vscode/
 
 .venv_pyspark/
+
+.pytest_cache/

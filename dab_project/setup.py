@@ -9,9 +9,5 @@ setup(
     packages=find_packages(where="./src"),
     package_dir={"": "./src"},
     install_requires=["setuptools"],
-    entry_points={
-        "packages":[
-            "main=dab_project.main:main"
-        ]
-    }
+    entry_points={"packages": ["main=dab_project.main:main"]},
 )
