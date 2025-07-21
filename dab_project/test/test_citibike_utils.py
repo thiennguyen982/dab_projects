@@ -1,29 +1,7 @@
-import os
-import sys
-
-sys.path.append(os.getcwd())
-
-os.environ.pop("SPARK_REMOTE", None)
-os.environ.pop("DATABRICKS_RUNTIME_VERSION", None)
-os.environ.pop("DATABRICKS_HOST", None)
-os.environ.pop("DATABRICKS_TOKEN", None)
-os.environ["PYSPARK_PYTHON"] = sys.executable
-os.environ["PYSPARK_DRIVER_PYTHON"] = sys.executable
-
 import pytest
-from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType, StructField, StringType
 from pyspark.sql import Row
 from src.citibike.citibike_utils import get_trip_duration
-
-
-@pytest.fixture(scope="session")
-def spark():
-    return (
-        SparkSession.builder.master("local[1]")
-        .appName("TestTripDuration")
-        .getOrCreate()
-    )
 
 
 def test_get_trip_duration(spark):

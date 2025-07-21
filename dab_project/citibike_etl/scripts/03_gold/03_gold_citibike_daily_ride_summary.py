@@ -1,4 +1,4 @@
-from pyspark.sql import SparkSession, DataFrame
+from pyspark.sql import SparkSession
 from pyspark.sql.functions import max, min, avg, count, round
 from databricks.connect import DatabricksSession
 import sys
