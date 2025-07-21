@@ -21,3 +21,5 @@ databricks/
 .venv_pyspark/
 
 .pytest_cache/
+
+.coverage
