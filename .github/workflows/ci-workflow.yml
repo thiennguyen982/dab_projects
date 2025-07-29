@@ -30,7 +30,7 @@ jobs:
         run: |
           pytest \
             --disable-warnings \
-            --cov=./src \
+            --cov=.dab_project/src \
             --cov-report=html
 
       - name: Upload coverage HTML report
