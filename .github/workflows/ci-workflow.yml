@@ -28,6 +28,7 @@ jobs:
 
       - name: Run pytest & generate HTML report
         run: |
+          cd ./dab_project/
           pytest \
             --disable-warnings \
             --cov=./dab_project/src \
