@@ -17,14 +17,17 @@ targets:
     mode: development
     default: true
     workspace:
-      host: https://adb-3466462831393837.17.azuredatabricks.net
+      host: https://adb-775380865983040.0.azuredatabricks.net/
+      permissions:
+      - user_name: nguyenhoangthien1998@gmail.com
+        level: CAN_MANAGE
 
   test:
     mode: production
     presets:
       name_prefix: '[testing] '
     workspace:
-      host: https://adb-4212853586874431.11.azuredatabricks.net
+      host: https://adb-1806331840433758.18.azuredatabricks.net/
       root_path: /Workspace/Shared/.bundle/${bundle.name}/${bundle.target}
     permissions:
       - user_name: nguyenhoangthien1998@gmail.com

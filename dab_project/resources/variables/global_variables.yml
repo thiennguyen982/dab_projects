@@ -3,7 +3,10 @@ variables:
     default: "citibike_dev"
 
   existing_cluster_id:
-    default: "0709-082159-boeeu50"
+    default: "0921-140147-mpr9rnte"
 
   dev_flag:
     default: true
+
+  share_filepath:
+    default: "/Workspace/Users/nguyenhoangthien1998@gmail.com/.bundle/dab_project/dev/files/citibike_etl/notebooks/"
