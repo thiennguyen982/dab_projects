@@ -1,10 +1,13 @@
 # HOST
 databricks configure --host <HOST_ADDRESS>
 
-# Setup shelll
+# Open databrickscgf 
+~/.databrickscfg
+
+# Setup shelll # if needed
 $env:DATABRICKS_HOST=<Host>
 $env:DATABRICKS_TOKEN=<Token>
-$env:DATABRICKS_AUTH_TYPE='pat' # if needed
+$env:DATABRICKS_AUTH_TYPE='pat'
 
 # Create Clusters
 databricks clusters create --json @create-compute.json --profile DEFAULT

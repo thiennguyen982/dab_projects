@@ -6,13 +6,13 @@ resources:
         catalog: "${var.catalog}"
       libraries:
         - notebook:
-            path: ../../citibike_etl/dlt_notebooks/01_bronze/01_bronze_citibike.ipynb
+            path: "${var.share_filepath}/01_bronze/01_bronze_citibike.ipynb"
         - notebook:
-            path: ../../citibike_etl/dlt_notebooks/02_silver/02_silver_citibike.ipynb
+            path: "${var.share_filepath}/02_silver/02_silver_citibike.ipynb"
         - notebook:
-            path: ../../citibike_etl/dlt_notebooks/03_gold/03_gold_citibike_daily_ride_summary.ipynb
+            path: "${var.share_filepath}/03_gold/03_gold_citibike_daily_ride_summary.ipynb"
         - notebook:
-            path: ../../citibike_etl/dlt_notebooks/03_gold/03_gold_citibike_daily_station_performance.ipynb
+            path: "${var.share_filepath}/03_gold/03_gold_citibike_daily_station_performance.ipynb"
       schema: default
       development: "${var.dev_flag}"
       photon: true

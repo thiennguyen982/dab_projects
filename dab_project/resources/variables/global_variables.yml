@@ -9,4 +9,4 @@ variables:
     default: true
 
   share_filepath:
-    default: "/Workspace/Users/nguyenhoangthien1998@gmail.com/.bundle/dab_project/dev/files/citibike_etl/notebooks/"
+    default: "../../citibike_etl/dlt_notebooks"
